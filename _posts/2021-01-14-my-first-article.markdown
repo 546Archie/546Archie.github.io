@@ -6,6 +6,6 @@ catagories: general
 ---
 This is my first artical using Jekyll, test test!
 
-{% highlght ruby %}
+{% highlight ruby %}
 test highlight
 {% endhighlight %}
