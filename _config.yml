@@ -21,10 +21,11 @@
 title: Archie's blog
 email: archie.cs09g@nctu.edu.tw
 description: >- # this means to ignore newlines until "baseurl:"
-Blog to record what I learned and done no matter when.
-Just a reminder for the study stuffs.
-Hope we can all find the motivation of our life and always have passion for that everyday.
-Cheers!
+  A blog to record what I have learned and what I have done no matter when.
+  Just a reminder for my learning stuffs.
+  Hope we all can find our faith and passion for life.
+  Word hard play hard.
+  Cheers!
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 ig_username: 6_archie
