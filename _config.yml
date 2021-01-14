@@ -24,7 +24,7 @@ description: >- # this means to ignore newlines until "baseurl:"
   A blog to record what I have learned and what I have done no matter when.
   Just a reminder for my learning stuffs.
   Hope we all can find our faith and passion for life.
-  Word hard play hard.
+  Work hard play hard.
   Cheers!
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
