@@ -6,9 +6,11 @@ catagories: 5G
 ---
 This serial of article will focue on 5G Authentication. Fot the first article, I will briefly go through the difference between 4G and 5G.
 
-<div class="datatable-begin"></div>
-Food   | Description				| Catagory | Sample type
--------|----------------------------|----------|------------
-Apples |small, round			    |Fruit	   | Fuji	
-<div class="datatable-end"></div>
+|:			4g vs 5g			:|||
+|:---------|:------|:---------------|
+|Apple	   |:Apple:|Apple			|
 
+
+#Food   | Description				| Catagory | Sample type
+#-------|----------------------------|----------|------------
+#Apples |small, round			    |Fruit	   | Fuji	
