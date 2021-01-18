@@ -11,6 +11,6 @@ This serial of article will focue on 5G Authentication. Fot the first article, I
 |Apple	   |:Apple:|Apple			|
 
 
-#Food   | Description				| Catagory | Sample type
-#-------|----------------------------|----------|------------
-#Apples |small, round			    |Fruit	   | Fuji	
+Food   | Description				| Catagory | Sample type
+-------|----------------------------|----------|------------
+Apples |small, round			    |Fruit	   | Fuji	
