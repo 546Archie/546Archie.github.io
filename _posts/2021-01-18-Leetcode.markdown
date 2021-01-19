@@ -1,0 +1,113 @@
+---
+layout: post
+title: "Leetcode Record"
+data: 2021-01-18 21:00:00 +0800
+catagories: Leetcode
+---
+<html>
+	<meta charset="utf-8">
+	<h1>Question 290. Word Pattern</h1>
+	<hr /><br />
+	<p><b>Description: </b><br />Given a pattern and a string s, find if s follows the same pattern.<br />Here follow means a full match, such that there is a bijection between a letter in pattern and a non-empty word in s.
+	<hr /><br />
+	<p><b>Method:</b><p>
+	<ol>
+		<li>Using unsorted map to save item and pattern(map<char, string>).</li>
+		<li>Using another string vector to record already exist item.</li>
+		<li>Iterate this map to find the exist pattern and compare.</li>
+		<li>If the pattern not exist, check whether the item is duplicate ot not and return.</li>
+	</ol>
+
+	<h3>The usage of map</h3>
+	<p>Map is an STL of cpp lang and it has some similar STL.
+	<table border=1>
+		<tr>
+			<th>Map</th>
+			<td rowspan=2>Red-black tree(balanced binary search tree), more effective when dealing with big data set.</td>
+			<td rowspan=2>Data are sorted</td>
+			<td rowspan=2>For insert() and find(), it only needs O(logn)</td>
+			<td>Each key map to a specificed value, and value can be modified.</td>
+		</tr>
+	
+		<tr>
+			<th>Set</th>
+			<td>A set of value which can be irrelevant to other elements in that collection.</td>
+		</tr>
+
+		<tr>
+			<th>Unordered_map</th>
+			<td rowspan=2>Hash table, more effetive when dealing with small data set(compare to RB_tree), need O(1)</td>
+			<td rowspan=2>Data unsorted</td>
+			<td rowspan=2>For small dataset, need O(1), for big dataset, need O(N)</td>
+			<td>Each key map to a specificed value, and value can be modified.</td>
+		</tr>
+
+		<tr>
+			<th>Unordered_Set</th>
+			<td>A set of value which can be irrelevant to other elements in that collection.</td>
+		</tr>
+	</table>
+	</p>
+
+	<p><b>Map</b><br />
+	<b>A full example of using sorted map</b>
+	<pre>
+		<code>
+<b>#declare a new map</b>
+map<string, string> pattern;
+
+<b>#insert a pair into map</b>
+pattern.insert(pair<string, string>(key, value));
+
+<b>#or using array to insert key and value</b>
+pattern[key1] = value;
+pattern[key2] = value2;
+
+<b>#using find to search for specific key</b>
+
+<b>### iterator </b>
+map<string, string>::iterator iter;
+
+<b>### reverse iterator</b>
+map<string, string>::reverse_iterator iter_r;
+
+iter = pattern.find(key1);
+if(iter!=pattern.end())
+	cout<<"found"<<endl;
+else
+	cout<<"Cannot found"<<endl;
+
+
+<b>#iterate all the element</b>
+for(iter = pattern.begin();iter != pattern.end() ; iter++)
+	cout<<iter->first<<", "<<iter->second<<endl;
+
+<b>### reverse iterator</b>
+for(iter_r = rbegin() ; iter_r != pattern.rend() ; iter_r++)
+	cout<<iter_r->first<<", "<<iter_r->second<<endl;
+
+<b>#clear(), empty(), erase()</b>
+<b>### The usage of erase in three different ways</b>
+
+<b>#find first and erase</b>
+iter = pattern.find(key1);
+iter.earse(iter);
+
+<b>#erase using key</b>
+int ret = pattern.earse(key1);
+if(ret==1)
+	cout<<"Erased!!"<<endl;
+else //ret == 0
+	cout<<"Failed"<<endl;
+
+<b>#empty test</b>
+bool epy = pattern.empty();
+//will return false
+
+<b>#erase using range</b>
+pattern.erase(pattern.begin(), pattern.end());
+//this is equal to
+pattern.clear();
+
+epy = pattern.empty();
+//will return true
